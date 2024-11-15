@@ -5,6 +5,7 @@ import streamlit as st
 
 def is_string(variable): return isinstance(variable, str)
 
+
 def read_text_from_photo(reader, photo):
     detection = reader.readtext(photo)
     text = ""
@@ -13,6 +14,7 @@ def read_text_from_photo(reader, photo):
             if is_string(el):
                 text += el + "\n"
     return text
+
 
 reader = easyocr.Reader(['ru', 'en'])
 st.title("Загрузка фотографии, с которой вы хотите получить текст")
