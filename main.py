@@ -18,7 +18,7 @@ def read_text_from_photo(reader, photo):
 
 reader = easyocr.Reader(['ru', 'en'])
 st.title("Загрузка фотографии, с которой вы хотите получить текст")
-st.write(f"Тестовая ссылка:")
+st.write("Тестовая ссылка:")
 st.write("https://static1.wow2print.com/storage/65/gallery/image/1896205816629f8ee1d12786.96956893.webp")
 photo = st.text_input("Вставьте url фотографии")
 st.button("Обработать")
